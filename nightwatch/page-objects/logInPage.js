@@ -37,7 +37,8 @@ module.exports = {
         .click('@MicrosoftLogo')
     },
 
-    LogInUnsuccessfull: function(username, password) {
+
+    Login: function(username, password) {
         return this
         .setValue('@Username', username)
         .setValue('@Password', password)
