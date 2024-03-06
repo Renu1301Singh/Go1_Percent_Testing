@@ -13,12 +13,6 @@ Automate existing test cases documented on the "https://testlink.knoldus.com/".
 
 
 
-## Features
-
-- Automated testing of form inputs on demoQA website.
-- Utilizes Nightwatch.js for end-to-end testing.
-- Follows the Page Object Model for better test structure and maintenance.
-
 ## Requirements
 
 - Node.js (v12.x or later)
@@ -28,7 +22,7 @@ Automate existing test cases documented on the "https://testlink.knoldus.com/".
 ## Project Structure
 
 ```sh
-DEMOQA/
+Go1_Percent_Testing/
 │
 ├── page-objects/          # Page Object Model (POM) directory
 │   ├── logInpage.js       # Page object for login page
