@@ -1,25 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
-            failures="0"
-            tests="1">
+            failures="1"
+            tests="5">
 
   <testsuite name="MyactivityDashboardTest"
-    errors="1" failures="0" hostname="" id="" package="MyactivityDashboardTest" skipped="0"
-    tests="1" time="4.736" timestamp="">
+    errors="1" failures="1" hostname="" id="" package="MyactivityDashboardTest" skipped="0"
+    tests="5" time="29.55" timestamp="">
   
-    <testcase name="1.Verify user should be able to see the all the activities on the My activity:" classname="MyactivityDashboardTest" time="0.05600" assertions="0">
-    <error message="elementCount is not defined" type="error"><![CDATA[
-    ReferenceError: elementCount is not defined
-    at DescribeInstance.&lt;anonymous&gt; (/home/knoldus/Desktop/Go1_Percent_Testing/test/MyactivityDashboardTest.js:17:31)
+    <testcase name="1.Verify user should be able to see the all the activities on the My activity:" classname="MyactivityDashboardTest" time="2.937" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="2.Verify appropriate points should be added according to the contribution:" classname="MyactivityDashboardTest" time="0.001000" assertions="0">
+    </testcase>
+  
+    <testcase name="3.Verify that the user can able to see the time the activity was done on all Activity :" classname="MyactivityDashboardTest" time="0.1230" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="4. Verify that the user can able to scroll down and see all the activities :" classname="MyactivityDashboardTest" time="0.001000" assertions="0">
+    </testcase>
+  
+    <testcase name="5. Verify user should see Add a contribution button when no contribution has been added by the user :" classname="MyactivityDashboardTest" time="10.39" assertions="2">
+
+      <failure message="Timed out while waiting for element &lt;span[_ngcontent-buv-c169].addRewardTxt&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5279ms)">    at Page.addContributution (/home/knoldus/Desktop/Go1_Percent_Testing/nightwatch/page-objects/DashboardPage.js:303:10)
+    at DescribeInstance.&lt;anonymous&gt; (/home/knoldus/Desktop/Go1_Percent_Testing/test/MyactivityDashboardTest.js:37:19)</failure>
+
+    
+    <error message="Timed out while waiting for element &lt;span[_ngcontent-buv-c169].addRewardTxt&gt; to be present for 5000 milliseconds. - expected [32m&#34;visible&#34;[39m but got: [31m&#34;not found&#34;[39m [90m(5279ms)[39m" type="error"><![CDATA[
+    Error
+    at Command.executeCommand (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/page-object/command-wrapper.js:281:22)
+    at Page.waitForElementVisible (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/page-object/command-wrapper.js:86:27)
+    at Page.addContributution (/home/knoldus/Desktop/Go1_Percent_Testing/nightwatch/page-objects/DashboardPage.js:303:10)
+    at DescribeInstance.&lt;anonymous&gt; (/home/knoldus/Desktop/Go1_Percent_Testing/test/MyactivityDashboardTest.js:37:19)
     at Context.call (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/context.js:515:35)
     at TestCase.run (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
     at Runnable.__runFn (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:839:80)
     at Runnable.run (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
     at TestSuite.executeRunnable (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:1000:49)
     at TestSuite.handleRunnable (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:1015:33)
-    at /home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:839:21
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async DefaultRunner.runTestSuite (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/runner/test-runners/default.js:83:7)
     ]]></error>
     
     </testcase>
@@ -27,30 +54,20 @@
 
   
     <system-err>
-       ✖ ReferenceError
-   elementCount is not defined
+       TimeoutError
+   An error occurred while running .click() command on &lt;Element [name=@Contribution]&gt;: element click intercepted: Element &lt;li _ngcontent-aic-c178=&#34;&#34; class=&#34;nav-item my-1 cursor-pointer text-bold p-2 newTabs&#34;&gt;...&lt;/li&gt; is not clickable at point (1047, 390). Other element would receive the click: &lt;div _ngcontent-aic-c165=&#34;&#34; class=&#34;card tab-card py-5 px-4&#34;&gt;...&lt;/div&gt;
+  (Session info: chrome=122.0.6261.57)
+    {&#34;error&#34;:{&#34;name&#34;:&#34;ElementClickInterceptedError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
 
     Error location:
-    /home/knoldus/Desktop/Go1_Percent_Testing/test/MyactivityDashboardTest.js:17
+    /home/knoldus/Desktop/Go1_Percent_Testing/test/MyactivityDashboardTest.js:37
     –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-     15 |     dashboardPage.navigatingToProfilePage();
-     16 |     dashboardPage.SeeAllActivities();
-     17 |    dashboardPage.assert.equal(elementCount, &#39;224&#39;); 
-     18 |    
-     19 |   });
+     35 |   });
+     36 |   it(&#34;5. Verify user should see Add a contribution button when no contribution has been added by the user :&#34;, function () {
+     37 |     dashboardPage.addContributution(); 
+     38 |     
+     39 | 
     –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    Stack Trace :
-    at DescribeInstance.&lt;anonymous&gt; (/home/knoldus/Desktop/Go1_Percent_Testing/test/MyactivityDashboardTest.js:17:31)
-    at Context.call (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/context.js:515:35)
-    at TestCase.run (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
-    at Runnable.__runFn (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:839:80)
-    at Runnable.run (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
-    at TestSuite.executeRunnable (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:1000:49)
-    at TestSuite.handleRunnable (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:1015:33)
-    at /home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:839:21
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async DefaultRunner.runTestSuite (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/runner/test-runners/default.js:83:7)
 
     </system-err>
   

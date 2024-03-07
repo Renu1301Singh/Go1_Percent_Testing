@@ -1,7 +1,6 @@
 module.exports = {
   url: "https://nashtechglobal.qa.go1percent.com/my-dashboard",
 
-
   elements: {
     welcomeMessage: ".ml-1.mt-4.text-div",
     profilePicture: ".material-symbols-outlined.hexSmall",
@@ -78,10 +77,15 @@ module.exports = {
       selector: "//a[@class='nav-link text-white font-weight-bolder']",
       locateStrategy: "xpath",
     },
-    allActivitySection:'.timeline.w-100.mx-1',
+    allActivitySection: ".timeline.w-100.mx-1",
+    Contribution:'.nav-item.my-1.cursor-pointer.text-bold.p-2.newTabs',
+    ContributionTime:'.display-time',
+    addingContribution:'span[_ngcontent-buv-c169].addRewardTxt',
+    TitleOfContribution:'.form-control.msg-section.p-2.overall-txt-color.ng-pristine.ng-invalid.ng-touched',
     
+
   },
- 
+
   commands: [
     {
       verifyWelcomeText: function () {
@@ -281,20 +285,31 @@ module.exports = {
             document.querySelector(".sb-icon").click();
           });
       },
-    //   getElementCount: function(browser) {
-    //     return browser.elements('css selector', this.elements.yourElement, function(result) {
-    //       return result.value.length;
-    //     }),
-    
-      SeeAllActivities: function(){
-        return this
-        .waitForElementVisible('@allActivitySection')
-        .execute(function () {
-         var elementCount = document.querySelectorAll("[alt='badge']").length;
-        console.log('Number of elements:', elementCount);
-    })
 
-      }
+      SeeAllActivities: function () {
+        return this.waitForElementVisible("@allActivitySection").execute(
+          function () {
+            var elementCount = document.querySelectorAll(".timeline-icon")
+              .length;
+            console.log("Number of elements:", elementCount);
+            return elementCount;
+          }
+        );
+      },
+      addContributution: function(){
+        return this
+        .waitForElementVisible('@Contribution')
+        .click('@Contribution')
+        .waitForElementVisible('@addingContribution')
+        .click('@addingContribution')
+
+      },
+      ContributionTimeVisible: function(){
+        return this
+        .waitForElementVisible('@ContributionTime')
+
+      },
     },
-  ]
+   
+  ],
 };
