@@ -48,8 +48,6 @@ module.exports = {
         return this
         .waitForElementVisible('@RememberMeButton',5000)
         .click('@RememberMeButton')
-        
-
     },
 
     ClickForgotPassword(){

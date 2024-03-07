@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="MyactivityDashboardTest"
+    errors="1" failures="0" hostname="" id="" package="MyactivityDashboardTest" skipped="0"
+    tests="1" time="4.736" timestamp="">
+  
+    <testcase name="1.Verify user should be able to see the all the activities on the My activity:" classname="MyactivityDashboardTest" time="0.05600" assertions="0">
+    <error message="elementCount is not defined" type="error"><![CDATA[
+    ReferenceError: elementCount is not defined
+    at DescribeInstance.&lt;anonymous&gt; (/home/knoldus/Desktop/Go1_Percent_Testing/test/MyactivityDashboardTest.js:17:31)
+    at Context.call (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/context.js:515:35)
+    at TestCase.run (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
+    at Runnable.__runFn (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:839:80)
+    at Runnable.run (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
+    at TestSuite.executeRunnable (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:1000:49)
+    at TestSuite.handleRunnable (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:1015:33)
+    at /home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:839:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DefaultRunner.runTestSuite (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/runner/test-runners/default.js:83:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       ✖ ReferenceError
+   elementCount is not defined
+
+    Error location:
+    /home/knoldus/Desktop/Go1_Percent_Testing/test/MyactivityDashboardTest.js:17
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     15 |     dashboardPage.navigatingToProfilePage();
+     16 |     dashboardPage.SeeAllActivities();
+     17 |    dashboardPage.assert.equal(elementCount, &#39;224&#39;); 
+     18 |    
+     19 |   });
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    Stack Trace :
+    at DescribeInstance.&lt;anonymous&gt; (/home/knoldus/Desktop/Go1_Percent_Testing/test/MyactivityDashboardTest.js:17:31)
+    at Context.call (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/context.js:515:35)
+    at TestCase.run (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
+    at Runnable.__runFn (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:839:80)
+    at Runnable.run (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
+    at TestSuite.executeRunnable (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:1000:49)
+    at TestSuite.handleRunnable (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:1015:33)
+    at /home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/testsuite/index.js:839:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DefaultRunner.runTestSuite (/home/knoldus/Desktop/Go1_Percent_Testing/node_modules/nightwatch/lib/runner/test-runners/default.js:83:7)
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

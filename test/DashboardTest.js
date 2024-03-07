@@ -1,10 +1,13 @@
 const logInPage = browser.page.logInPage();
 const dashboardPage = browser.page.DashboardPage();
+const dotenv = require('dotenv')
+dotenv.config();
+
 describe("GO1% Dashboard", function () {
   before(function (browser) {
     dashboardPage.navigate();
     dashboardPage.maximizeWindow();
-    logInPage.Login("testemployee", "testemployee");
+    logInPage.Login( process.env.USER_NAME,process.env.PASSWORD);
   });
 
   after(function (browser) {
@@ -145,10 +148,6 @@ describe("GO1% Dashboard", function () {
     browser.back();
   });
 
-  // it('17. Verify user should not be able to Redeem Rewards if points not sufficient  :', function()
-  // {
-
-  // })
 
   it("19.Verify user should be able to Redeem Rewards from Your Rewards :", function () {
     dashboardPage.ClickRedeemRewards();
