@@ -133,22 +133,6 @@ describe("GO1% Dashboard", function () {
       }
     });
 
-    //     dashboardPage.pause(2000);
-    //     browser.windowHandles(function(result) {
-    //       console.log(result.value);
-    //       var newTab = result.value[1];
-    //       browser.switchWindow(newTab);
-    //     });
-
-    //     browser.assert.urlContains('twitter')
-    //     browser.pause(2000)
-    //     browser.closeWindow()
-    //     browser.switchWindow(function(windowHandles) {
-    //         var originalTab = windowHandles[0]; // Index of the original tab
-    //         this.switchWindow(originalTab);
-    //         browser.end();
-
-    //   });
     browser.assert.urlEquals(
       "https://nashtechglobal.qa.go1percent.com/my-dashboard"
     );
