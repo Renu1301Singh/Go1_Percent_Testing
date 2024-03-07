@@ -32,7 +32,7 @@ Go1_Percent_Testing/
 ├── test/                  # Test scripts directory
 │   ├── Tests.js           # Test scripts LogIn Page Test cases
 │   └── DashboadTest.js    # Test Script Dashboard Test cases of "My Dashboard"
-│   └── MyActivityDashboardTest
+│   └── MyActivityDashboardTest.js
 │   └── ....
 │
 │
