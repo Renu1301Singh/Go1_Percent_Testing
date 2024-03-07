@@ -34,7 +34,10 @@ Go1_Percent_Testing/
 │   └── DashboadTest.js    # Test Script Dashboard Test cases of "My Dashboard"
 │   └── ...
 │
-├── testoutput
+├── test_output
+│
+│
+├── .env
 │
 │
 ├── nightwatch.conf.js     # Nightwatch configuration file
