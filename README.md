@@ -34,6 +34,9 @@ Go1_Percent_Testing/
 │   └── DashboadTest.js    # Test Script Dashboard Test cases of "My Dashboard"
 │   └── ...
 │
+├── testoutput
+│
+│
 ├── nightwatch.conf.js     # Nightwatch configuration file
 └── package-lock.json          
 └── package.json           # Node.js dependencies and scripts
