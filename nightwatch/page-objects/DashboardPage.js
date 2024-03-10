@@ -88,10 +88,10 @@ module.exports = {
 
   commands: [
     {
-      verifyWelcomeText: function () {
+      WelcomeText: function () {
         return this.waitForElementVisible("@welcomeMessage");
       },
-      verifyAllFieldsVisible: function () {
+      AllFieldsVisible: function () {
         return this.waitForElementVisible("@dashboard");
       },
 
