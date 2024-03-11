@@ -91,9 +91,6 @@ module.exports = {
       WelcomeText: function () {
         return this.waitForElementVisible("@welcomeMessage");
       },
-      AllFieldsVisible: function () {
-        return this.waitForElementVisible("@dashboard");
-      },
 
       navigatingToProfilePage: function () {
         return this.waitForElementVisible("@profilePicture").execute(
