@@ -88,9 +88,6 @@ module.exports = {
 
   commands: [
     {
-      WelcomeText: function () {
-        return this.waitForElementVisible("@welcomeMessage");
-      },
 
       navigatingToProfilePage: function () {
         return this.waitForElementVisible("@profilePicture").execute(
@@ -129,27 +126,7 @@ module.exports = {
             .click();
         });
       },
-      FieldsOnDashboard: function () {
-        return this.pause(3000)
-          .waitForElementVisible("@KnolX")
-          .waitForElementVisible("@Radar")
-          .waitForElementVisible("@LeaderBoard")
-          .waitForElementVisible("@Helpdesk")
-          .waitForElementVisible("@Help")
-          .waitForElementVisible("@Scoring")
-          .waitForElementVisible("@Vision")
-          .waitForElementVisible("@dashboard", 1000)
-          .waitForElementVisible("@DailyMotivation", 1000)
-          .waitForElementVisible("@Picture", 1000)
-          .waitForElementVisible("@lastContribution")
-          .waitForElementVisible("@RedeemRewards")
-          .waitForElementVisible("@Points")
-          .waitForElementVisible("@OverAllScore")
-          .waitForElementVisible("@overAllRank")
-          .waitForElementVisible("@MonthsContribution")
-          .waitForElementVisible("@searchNasher")
-          .waitForElementVisible("@welcomeMessage");
-      },
+
 
       lastContributionVisible: function () {
         return this.waitForElementVisible(
@@ -301,11 +278,7 @@ module.exports = {
         .click('@addingContribution')
 
       },
-      ContributionTimeVisible: function(){
-        return this
-        .waitForElementVisible('@ContributionTime')
-
-      },
+  
     },
    
   ],

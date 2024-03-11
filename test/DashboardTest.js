@@ -22,7 +22,25 @@ describe("GO1% Dashboard", function () {
     dashboardPage.pause(2000);
   }),
     it("2.Verify user should be able to see all fields in dashboard page ) :", function () {
-      dashboardPage.FieldsOnDashboard();
+      dashboardPage.
+         waitForElementVisible("@KnolX")
+          .waitForElementVisible("@Radar")
+          .waitForElementVisible("@LeaderBoard")
+          .waitForElementVisible("@Helpdesk")
+          .waitForElementVisible("@Help")
+          .waitForElementVisible("@Scoring")
+          .waitForElementVisible("@Vision")
+          .waitForElementVisible("@dashboard", 1000)
+          .waitForElementVisible("@DailyMotivation", 1000)
+          .waitForElementVisible("@Picture", 1000)
+          .waitForElementVisible("@lastContribution")
+          .waitForElementVisible("@RedeemRewards")
+          .waitForElementVisible("@Points")
+          .waitForElementVisible("@OverAllScore")
+          .waitForElementVisible("@overAllRank")
+          .waitForElementVisible("@MonthsContribution")
+          .waitForElementVisible("@searchNasher")
+          .waitForElementVisible("@welcomeMessage");
     });
 
   it("3.Verify user should be able to navigate profile page through Profile picture :", function () {

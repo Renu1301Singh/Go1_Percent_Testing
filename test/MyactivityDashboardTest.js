@@ -25,7 +25,7 @@ describe("GO1% Dashboard", function () {
     
   });
   it("3.Verify that the user can able to see the time the activity was done on all Activity :", function () {
-    dashboardPage.ContributionTimeVisible();
+  
     dashboardPage.expect.element('@ContributionTime').to.be.visible;
     dashboardPage.assert.containsText('.display-time', 'AGO')
 
