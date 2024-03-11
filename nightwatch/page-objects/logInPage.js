@@ -30,40 +30,53 @@ module.exports = {
       },
 
       clickMicrosoftLogo() {
-        return this.waitForElementVisible("@MicrosoftLogo", 2000).click(
-          "@MicrosoftLogo"
+        return this.waitForElementVisible("@MicrosoftLogo", 2000).execute(
+          function () {
+            document.querySelector("#social-oidc").click();
+          }
         );
       },
 
       Login: function (username, password) {
         return this.setValue("@Username", username)
           .setValue("@Password", password)
-          .click("@SignInButton");
+          .execute(function () {
+            document.querySelector("#kc-login").click();
+          });
       },
       RememberMeChecked() {
-        return this.waitForElementVisible("@RememberMeButton", 5000).click(
-          "@RememberMeButton"
+        return this.waitForElementVisible("@RememberMeButton", 5000).execute(
+          function () {
+            document.querySelector(".checkmark").click();
+          }
         );
       },
 
       ClickForgotPassword() {
         return this.waitForElementVisible("@ForgotPassword", 2000)
-          .click("@ForgotPassword")
+        .execute(function () {
+          document.querySelector('a[tabindex="5"]').click();
+        })
           .setValue("@Email", "Tester@gmail.com")
-          .click("@SubmitButton");
+          .execute(function () {
+            document.querySelector('input[value="Submit"]').click();
+          });
+
         browser.back();
       },
 
       clickTermsOfUse() {
-        return this.waitForElementVisible("@TermsOfUse", 2000).click(
-          "@TermsOfUse"
-        );
+        return this.waitForElementVisible("@TermsOfUse", 2000)
+        .execute(function () {
+          document.querySelector('a:nth-child(1) b:nth-child(1)').click();
+        });
       },
 
       ClickPrivacyPolicy() {
-        return this.waitForElementVisible("@PrivacyPolicy", 2000).click(
-          "@PrivacyPolicy"
-        );
+        return this.waitForElementVisible("@PrivacyPolicy", 2000)
+        .execute(function () {
+          document.querySelector('a:nth-child(2) b:nth-child(1)').click();
+        });
       },
     },
   ],
