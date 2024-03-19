@@ -19,7 +19,10 @@ module.exports = {
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
   page_objects_path: ['nightwatch/page-objects'],
 
-
+  
+    custom_commands_path: ["nightwatch/commands"],
+  
+  
   webdriver: {},
 
   test_workers: {

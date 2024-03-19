@@ -1,3 +1,4 @@
+const { document } = require("nightwatch");
 const logInPage = browser.page.logInPage();
 const dotenv = require("dotenv");
 dotenv.config();
@@ -35,7 +36,7 @@ describe("GO1 Percent Login Features tests", function () {
   });
 
   it("6. Verify that clicking on the Microsoft logo redirects to the Microsoft login page", function () {
-    logInPage.clickMicrosoftLogo();
+    logInPage.focus("css", "#social-oidc");
     logInPage.getTitle(function (title) {
       this.assert.equal(title, "Sign in to your account");
     });
@@ -50,13 +51,14 @@ describe("GO1 Percent Login Features tests", function () {
   });
 
   it("9. Verify remember me checkbox is selected during login", function (browser) {
-    logInPage.RememberMeChecked();
+    logInPage.focus("css", ".checkmark");
     logInPage.pause(2000);
     browser.expect.element("#rememberMe").to.be.selected.before(100);
   });
 
   it("10. Verify the forgot Password functionality ", function () {
     logInPage
+      .focus("css", 'a[tabindex="5"]')
       .ClickForgotPassword()
       .assert.containsText(
         "@AlertMessage",
@@ -65,7 +67,7 @@ describe("GO1 Percent Login Features tests", function () {
   });
 
   it('11. Verify clicking on the "Terms of Use" link opens a new page with the terms of use', function (browser) {
-    logInPage.clickTermsOfUse();
+    logInPage.focus("css", "a:nth-child(1) b:nth-child(1)");
     browser.windowHandles(function (result) {
       const originalWindow = result.value[0];
       const handle = result.value[1];
@@ -75,7 +77,7 @@ describe("GO1 Percent Login Features tests", function () {
   });
 
   it('12.  Verify clicking on the "Privacy policy" link opens a new page with the privacy policy', function (browser) {
-    logInPage.ClickPrivacyPolicy();
+    logInPage.focus("css", "a:nth-child(2) b:nth-child(1)");
     browser.windowHandles(function (result) {
       const originalWindow = result.value[0];
       const handle = result.value[2];

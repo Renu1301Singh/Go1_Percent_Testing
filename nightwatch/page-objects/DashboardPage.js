@@ -2,65 +2,21 @@ module.exports = {
   url: "https://nashtechglobal.qa.go1percent.com/my-dashboard",
 
   elements: {
-    welcomeMessage: ".ml-1.mt-4.text-div",
-    profilePicture: ".material-symbols-outlined.hexSmall",
-    Picture: {
-      selector:
-        "//div[@class='material-symbols-outlined hex']//*[name()='svg']",
-      locateStrategy: "xpath",
-    },
-
-    searchNasher: "#Search",
-    dashboard: ".nav-link.ps-0.active",
-    languageDropDown: "div>.dropdown-select",
-    selectFrenchLanguage: ".dropdown-list__item:last-child",
-    selectEnglishLanguage: ".dropdown-list__item:first-child",
-    ChangeView:
+    addingContribution: "span[_ngcontent-buv-c169].addRewardTxt",
+    allActivitySection: ".timeline.w-100.mx-1",
+    Contribution: ".nav-item.my-1.cursor-pointer.text-bold.p-2.newTabs",
+    contributionTime: ".display-time",
+    changeView:
       "ul[class='navbar-nav justify-content-end'] i[class='material-icons user-icon cursor-pointer']",
-    lastContribution:
-      "div[class='mt-3 mb-4 d-flex align-items-center justify-content-center'] h5:nth-child(1)",
-    lastContributionDetail: ".font-weight-light.text-center.text-break",
-    DailyMotivation: ".d-flex.flex-column.mx-5",
-    DaliyMotivationSeeAll: ".btn.px-3.py-1.all-btn.border-button",
-    likeContribution: ".icon.mx-1",
-
-    likeCount:
-      "div[class='my-dashboard mt-n4'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a:nth-child(1) span:nth-child(2)",
+    commentVisible: "div[class='comment-text']",
+    clickYes: ".btn.btn-primary.m-2",
+    dailyMotivation: ".card.page-wrapper",
+    daliyMotivationSeeAll: ".btn.px-3.py-1.all-btn.border-button",
+    dashboard: ".nav-link.ps-0.active",
     dislikeContribution:
       "div[class='my-dashboard mt-n4'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a:nth-child(2) span:nth-child(1)",
     dislikeCount:
       "div[class='my-dashboard mt-n4'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a:nth-child(2) span:nth-child(2)",
-    commentVisible: "div[class='comment-text']",
-    SettingButton:
-      "ul[class='navbar-nav justify-content-end'] app-dropdown-wrapper div[class='position-relative'] div[class='pt-2'] li[class='icon nav-item dropdown px-2 d-flex align-items-center justify-content-center'] a[class='nav-link text-body p-0 text-white'] div i[class='material-icons user-icon']",
-    ProfileButton: "div[class='d-flex py-1 mt-1'] span",
-    logout: "div[class='d-flex py-1'] span",
-    RedeemRewards: ".my-1.reedeem-btn.font-weight-bold",
-    ClickYes: ".btn.btn-primary.m-2",
-    RewardMessage: "div[aria-label='Hi, you have redeemed the reward']",
-    Points:
-      "body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-overall-my-contributions:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(2)",
-    OverAllScore:
-      "div[class='flex-column d-flex justify-content-center align-items-center col-lg-3 col-md-3 col-sm-3 col-6'] h3[class='mb-2']",
-    overAllRank:
-      "body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-overall-my-contributions:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h3:nth-child(2)",
-    shareButton: ".material-icons.cursor-pointer.vertical-menu",
-    selectMedia: ".sb-icon",
-    MonthsContribution:
-      "div[class='card col-lg-12 col-12 mt-4'] h5:nth-child(1)",
-    KnolX: {
-      selector: "//h6[normalize-space()='Knolx']",
-      locateStrategy: "xpath",
-    },
-
-    Radar: {
-      selector: "//a[@href='/radar/view']",
-      locateStrategy: "xpath",
-    },
-    LeaderBoard: {
-      selector: "//h6[normalize-space()='LEADERBOARD']",
-      locateStrategy: "xpath",
-    },
     Helpdesk: {
       selector: "//h6[normalize-space()='HelpDesk']",
       locateStrategy: "xpath",
@@ -69,205 +25,166 @@ module.exports = {
       selector: "//a[@href='/help']",
       locateStrategy: "xpath",
     },
+    KnolX: {
+      selector: "//h6[normalize-space()='Knolx']",
+      locateStrategy: "xpath",
+    },
+    languageDropDown: "div>.dropdown-select",
+    lastContribution:
+      "div[class='mt-3 mb-4 d-flex align-items-center justify-content-center'] h5:nth-child(1)",
+    lastContributionDetail: ".font-weight-light.text-center.text-break",
+    leaderBoard: {
+      selector: "//h6[normalize-space()='LEADERBOARD']",
+      locateStrategy: "xpath",
+    },
+
+    likeContribution: ".icon.mx-1",
+
+    likeCount:
+      "div[class='my-dashboard mt-n4'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a:nth-child(1) span:nth-child(2)",
+    logout: "div[class='d-flex py-1'] span",
+    Picture: {
+      selector:
+        "//div[@class='material-symbols-outlined hex']//*[name()='svg']",
+      locateStrategy: "xpath",
+    },
+    monthsContribution:
+      "div[class='card col-lg-12 col-12 mt-4'] h5:nth-child(1)",
+
+    Points:
+      "body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-overall-my-contributions:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(2)",
+    profileButton: "div[class='d-flex py-1 mt-1'] span",
+
+    profilePicture: ".material-symbols-outlined.hexSmall",
     Scoring: {
       selector: "//a[@class='nav-link pe-0 text-white font-weight-bolder']",
       locateStrategy: "xpath",
     },
+
+    overAllRank:
+      "body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-overall-my-contributions:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h3:nth-child(2)",
+    overAllScore:
+      "div[class='flex-column d-flex justify-content-center align-items-center col-lg-3 col-md-3 col-sm-3 col-6'] h3[class='mb-2']",
+
+    Radar: {
+      selector: "//a[@href='/radar/view']",
+      locateStrategy: "xpath",
+    },
+
+    redeemRewards: ".my-1.reedeem-btn.font-weight-bold",
+
+    rewardMessage: "div[aria-label='Hi, you have redeemed the reward']",
+    searchNasher: "#Search",
+
+    selectEnglishLanguage: ".dropdown-list__item:first-child",
+    selectFrenchLanguage: ".dropdown-list__item:last-child",
+    selectMedia: ".sb-icon",
+    settingButton:
+      "ul[class='navbar-nav justify-content-end'] app-dropdown-wrapper div[class='position-relative'] div[class='pt-2'] li[class='icon nav-item dropdown px-2 d-flex align-items-center justify-content-center'] a[class='nav-link text-body p-0 text-white'] div i[class='material-icons user-icon']",
+
+    shareButton: ".material-icons.cursor-pointer.vertical-menu",
+
+    titleOfContribution:
+      ".form-control.msg-section.p-2.overall-txt-color.ng-pristine.ng-invalid.ng-touched",
+
     Vision: {
       selector: "//a[@class='nav-link text-white font-weight-bolder']",
       locateStrategy: "xpath",
     },
-    allActivitySection: ".timeline.w-100.mx-1",
-    Contribution:'.nav-item.my-1.cursor-pointer.text-bold.p-2.newTabs',
-    ContributionTime:'.display-time',
-    addingContribution:'span[_ngcontent-buv-c169].addRewardTxt',
-    TitleOfContribution:'.form-control.msg-section.p-2.overall-txt-color.ng-pristine.ng-invalid.ng-touched',
-    
 
+    welcomeMessage: ".ml-1.mt-4.text-div",
   },
 
   commands: [
-    
-     { navigatingToProfilePage : function(){ 
-        return this.
-        waitForElementVisible("@profilePicture").execute(
-        function () {
-          document
-            .querySelector(".material-symbols-outlined.hexSmall")
-            .click();
-        }
-      ); },
+    {
+      
 
       searchNasher: function (value) {
-        return this.waitForElementVisible("@searchNasher")
-          .setValue("@searchNasher", value)
-          .execute(function () {
-            document.querySelector(".text-color.name-text").click();
-          });
-      },
-
-  
-      changeViewMode: function () {
-        return this.waitForElementVisible("@ChangeView").execute(function () {
-          document
-            .querySelector(
-              "ul[class='navbar-nav justify-content-end'] i[class='material-icons user-icon cursor-pointer']"
-            )
-            .click();
+        return this.setValue("@searchNasher", value).execute(function () {
+          
         });
       },
 
-
-      lastContributionVisible: function () {
-        return this.waitForElementVisible(
-          "@lastContribution"
-        ).waitForElementVisible("@lastContributionDetail");
+      changeViewMode: function () {
+        return this
+      
+        .focus('css',"ul[class='navbar-nav justify-content-end'] i[class='material-icons user-icon cursor-pointer']")
       },
 
       motivationTile: function () {
-        return this.execute(function () {
-          document
-            .querySelector(".btn.px-3.py-1.all-btn.border-button")
-            .click();
-        });
+        return this
+       
+        .focus('css',".btn.px-3.py-1.all-btn.border-button")
       },
-    
+
       clickOnlikeContribution: function () {
-        return this.waitForElementVisible("@likeContribution").execute(
-          function () {
-            document
-              .querySelector(
-                "div[class='my-dashboard mt-n4'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a:nth-child(1) span:nth-child(1)"
-              )
-              .click();
-          }
-        );
+        return this
+        
+        .focus('css',"div[class='my-dashboard mt-n4'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a:nth-child(1) span:nth-child(1)")
       },
       clickOnDislikeButton: function () {
-        return this.waitForElementVisible("@dislikeContribution").execute(
-          function () {
-            document
-              .querySelector(
-                "div[class='my-dashboard mt-n4'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a:nth-child(2) span:nth-child(1)"
-              )
-              .click();
-          }
-        );
+        return this
+      
+        .focus('css',"div[class='my-dashboard mt-n4'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a:nth-child(2) span:nth-child(1)")
       },
-      InsertCommentOnContribution: function () {
-        return this.execute(function () {
-          document
-            .querySelector(
-              "body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-feeds:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a:nth-child(3) > span:nth-child(2)"
-            )
-            .click();
-        });
+      insertCommentOnContribution: function () {
+        return this
+      
+        .focus('css',"body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-feeds:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a:nth-child(3) > span:nth-child(2)")
       },
       navigateToProfileBySetting: function () {
-        return this.waitForElementVisible("@SettingButton")
-          .execute(function () {
-            document
-              .querySelector(
-                "ul[class='navbar-nav justify-content-end'] app-dropdown-wrapper div[class='position-relative'] div[class='pt-2'] li[class='icon nav-item dropdown px-2 d-flex align-items-center justify-content-center'] a[class='nav-link text-body p-0 text-white'] div i[class='material-icons user-icon']"
-              )
-              .click();
-          })
-          .waitForElementVisible("@ProfileButton")
-
-          .execute(function () {
-            document
-              .querySelector("div[class='d-flex py-1 mt-1'] span")
-              .click();
-          });
+        return this
+     
+        .focus('css',"ul[class='navbar-nav justify-content-end'] app-dropdown-wrapper div[class='position-relative'] div[class='pt-2'] li[class='icon nav-item dropdown px-2 d-flex align-items-center justify-content-center'] a[class='nav-link text-body p-0 text-white'] div i[class='material-icons user-icon']")
+        .focus('css',"div[class='d-flex py-1 mt-1'] span")
       },
-      LogoutBySettings: function () {
-        return this.waitForElementVisible("@SettingButton")
-          .execute(function () {
-            document
-              .querySelector(
-                "ul[class='navbar-nav justify-content-end'] app-dropdown-wrapper div[class='position-relative'] div[class='pt-2'] li[class='icon nav-item dropdown px-2 d-flex align-items-center justify-content-center'] a[class='nav-link text-body p-0 text-white'] div i[class='material-icons user-icon']"
-              )
-              .click();
-          })
-          .waitForElementVisible("@ProfileButton")
-
-          .execute(function () {
-            document.querySelector("div[class='d-flex py-1'] span").click();
-          });
+      logoutBySettings: function () {
+        return this
+        .focus('css',"ul[class='navbar-nav justify-content-end'] app-dropdown-wrapper div[class='position-relative'] div[class='pt-2'] li[class='icon nav-item dropdown px-2 d-flex align-items-center justify-content-center'] a[class='nav-link text-body p-0 text-white'] div i[class='material-icons user-icon']")
+        .focus('css',"div[class='d-flex py-1'] span")
+ 
       },
 
-      ClickRedeemRewards: function () {
-        return this.waitForElementVisible("@RedeemRewards")
-          .execute(function () {
-            document
-              .querySelector(".my-1.reedeem-btn.font-weight-bold")
-              .click();
-          })
-          .waitForElementVisible("@ClickYes")
-          .execute(function () {
-            document.querySelector(".btn.btn-primary.m-2").click();
-          });
+      clickRedeemRewards: function () {
+        return this
+        .focus('css',".my-1.reedeem-btn.font-weight-bold")
+        .focus('css',".btn.btn-primary.m-2")
+
+    
       },
       clickOnPoints: function () {
-        return this.waitForElementVisible("@Points").execute(function () {
-          document
-            .querySelector(
-              "body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-overall-my-contributions:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(2)"
-            )
-            .click();
-        });
+        return this
+        .focus('css',"body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-overall-my-contributions:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(2)")
+       
       },
       clickOnScore: function () {
-        return this.waitForElementVisible("@OverAllScore").execute(function () {
-          document
-            .querySelector(
-              "div[class='flex-column d-flex justify-content-center align-items-center col-lg-3 col-md-3 col-sm-3 col-6'] div[class='score-text text-center mt-n3']"
-            )
-            .click();
-        });
+        return this
+        .focus('css',"div[class='flex-column d-flex justify-content-center align-items-center col-lg-3 col-md-3 col-sm-3 col-6'] div[class='score-text text-center mt-n3']")
+    
       },
       clickOnRank: function () {
-        return this.waitForElementVisible("@overAllRank").execute(function () {
-          document
-            .querySelector(
-              "body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-overall-my-contributions:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h3:nth-child(2)"
-            )
-            .click();
-        });
+        return this
+        .focus('css',"body > app-root:nth-child(1) > div:nth-child(1) > app-main:nth-child(2) > section:nth-child(1) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-my-dashboard:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-overall-my-contributions:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h3:nth-child(2)")
+ 
       },
       shareContributionOnSocialMedia: function () {
-        return this.waitForElementVisible("@shareButton")
-          .execute(function () {
-            document
-              .querySelector(".material-icons.cursor-pointer.vertical-menu")
-              .click();
-          })
-          .waitForElementVisible("@selectMedia")
-          .execute(function () {
-            document.querySelector(".sb-icon").click();
-          });
-      },
-
-      SeeAllActivities: function () {
-        return this.waitForElementVisible("@allActivitySection").execute(
-          function () {
-            var elementCount = document.querySelectorAll(".timeline-icon")
-              .length;
-            console.log("Number of elements:", elementCount);
-            return elementCount;
-          }
-        );
-      },
-      addContributution: function(){
         return this
-        .waitForElementVisible('@Contribution')
-        .click('@Contribution')
-        .waitForElementVisible('@addingContribution')
-        .click('@addingContribution')
-
+        .focus('css','.material-icons.cursor-pointer.vertical-menu')
+        .focus('css',".sb-icon")
+ 
       },
-  
+
+      seeAllActivities: function () {
+        return this.execute(function () {
+          var elementCount = document.querySelectorAll(".timeline-icon").length;
+          console.log("Number of elements:", elementCount);
+          return elementCount;
+        });
+      },
+      addContributution: function () {
+        return this.click("@Contribution")
+        .click("@addingContribution");
+      },
     },
-   
   ],
 };
