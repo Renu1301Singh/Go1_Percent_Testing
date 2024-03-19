@@ -24,6 +24,10 @@ Automate existing test cases documented on the "https://testlink.knoldus.com/".
 ```sh
 Go1_Percent_Testing/
 │
+│
+├──commands/
+│   ├──focus.js
+│
 ├── page-objects/          # Page Object Model (POM) directory
 │   ├── logInpage.js       # Page object for login page
 │   └──DashboardPage.js    # Page Object for Dashboard Page
