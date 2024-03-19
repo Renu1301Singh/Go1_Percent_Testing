@@ -39,5 +39,6 @@ module.exports = {
     UpdateWordpressId: 'div[class="left-div-button-div mt-2"] [class="btndiv"]',
     WordpressId: "label[for='wordpressId'] strong",
   },
+  //could not proceed with it due to website issue
   commands: [{}],
 };

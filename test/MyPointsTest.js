@@ -11,7 +11,7 @@ describe("GO1% Dashboard", function () {
   after(function (browser) {
     browser.end();
   });
-
+// could not proceed with this due to website issues
 
 it("1.verify that user can view the current month's score and the division of contributions :",function(){
 

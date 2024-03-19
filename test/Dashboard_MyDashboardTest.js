@@ -45,6 +45,7 @@ describe("GO1% Dashboard", function () {
     dashboardPage.assert.urlContains("my-profile");
     browser.back();
   }),
+  // pause has been used here due to the rendering issue of the website
     it("4.Verify user should be able Search a Nasher :", function (browser) {
       dashboardPage.searchNasher("Gaurav Kumar ");
       dashboardPage.focus('css','.text-color.name-text')
