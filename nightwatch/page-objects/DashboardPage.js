@@ -20,7 +20,7 @@ module.exports = {
     lastContribution:
       "div[class='mt-3 mb-4 d-flex align-items-center justify-content-center'] h5:nth-child(1)",
     lastContributionDetail: ".font-weight-light.text-center.text-break",
-    DailyMotivation: ".col-lg-4>.text-center:first-child",
+    DailyMotivation: ".d-flex.flex-column.mx-5",
     DaliyMotivationSeeAll: ".btn.px-3.py-1.all-btn.border-button",
     likeContribution: ".icon.mx-1",
 
@@ -87,17 +87,16 @@ module.exports = {
   },
 
   commands: [
-    {
-
-      navigatingToProfilePage: function () {
-        return this.waitForElementVisible("@profilePicture").execute(
-          function () {
-            document
-              .querySelector(".material-symbols-outlined.hexSmall")
-              .click();
-          }
-        );
-      },
+    
+     { navigatingToProfilePage : function(){ 
+        return this.
+        waitForElementVisible("@profilePicture").execute(
+        function () {
+          document
+            .querySelector(".material-symbols-outlined.hexSmall")
+            .click();
+        }
+      ); },
 
       searchNasher: function (value) {
         return this.waitForElementVisible("@searchNasher")
@@ -107,16 +106,7 @@ module.exports = {
           });
       },
 
-      selectFrenchLanguage: function () {
-        return this.execute(function () {
-          document.querySelector(".dropdown-list__item:last-child").click();
-        });
-      },
-      selectEnglishLanguage: function () {
-        return this.execute(function () {
-          document.querySelector(".dropdown-list__item:first-child").click();
-        });
-      },
+  
       changeViewMode: function () {
         return this.waitForElementVisible("@ChangeView").execute(function () {
           document
@@ -141,9 +131,7 @@ module.exports = {
             .click();
         });
       },
-      dailyMotivationContent: function () {
-        return this.waitForElementVisible("@DailyMotivation");
-      },
+    
       clickOnlikeContribution: function () {
         return this.waitForElementVisible("@likeContribution").execute(
           function () {

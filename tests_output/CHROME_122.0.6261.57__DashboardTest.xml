@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="22">
+            tests="20">
 
   <testsuite name="DashboardTest"
     errors="0" failures="0" hostname="" id="" package="DashboardTest" skipped="0"
-    tests="22" time="86.23" timestamp="">
+    tests="20" time="83.78" timestamp="">
   
-    <testcase name="1.Verify user should be able to see Welcome text :" classname="DashboardTest" time="3.321" assertions="2">
-
-    
+    <testcase name="1.Verify user should be able to see Welcome text :" classname="DashboardTest" time="6.321" assertions="1">
 
     
     </testcase>
   
-    <testcase name="2.Verify user should be able to see all fields in dashboard page ) :" classname="DashboardTest" time="3.686" assertions="18">
+    <testcase name="2.Verify user should be able to see all fields in dashboard page ) :" classname="DashboardTest" time="0.4190" assertions="18">
 
     
 
@@ -43,55 +41,6 @@
     
 
     
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="3.Verify user should be able to navigate profile page through Profile picture :" classname="DashboardTest" time="0.08000" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="4.Verify user should be able Search a Nasher :" classname="DashboardTest" time="4.878" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="5.Verify user should be able to Change to French Language from dropdown :" classname="DashboardTest" time="2.082" assertions="1">
-
-    
-    </testcase>
-  
-    <testcase name="6. Verify user should be able to Change to English Language from dropdown :" classname="DashboardTest" time="2.092" assertions="1">
-
-    
-    </testcase>
-  
-    <testcase name="7. Verify user should be able to Change Application view to Light Mode :" classname="DashboardTest" time="2.165" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="8.Verify user should be able to Change Application view to Dark Mode :" classname="DashboardTest" time="2.112" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="9.Verify user should be able to see Last Contribution  :" classname="DashboardTest" time="0.1050" assertions="4">
 
     
 
@@ -102,51 +51,47 @@
     
     </testcase>
   
-    <testcase name="10.Verify user should be able to see Contribution on Motivation tile :" classname="DashboardTest" time="0.02600" assertions="2">
+    <testcase name="3.Verify user should be able to navigate profile page through Profile picture :" classname="DashboardTest" time="0.07100" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="11.Verify user should be able to Like specific Contribution :" classname="DashboardTest" time="2.797" assertions="2">
+    <testcase name="4.Verify user should be able Search a Nasher :" classname="DashboardTest" time="4.751" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="12. Verify user should be able to Dislike specific Contribution :" classname="DashboardTest" time="0.6840" assertions="2">
+    <testcase name="5.Verify user should be able to Change to French Language from dropdown :" classname="DashboardTest" time="2.053" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="6. Verify user should be able to Change to English Language from dropdown :" classname="DashboardTest" time="2.102" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="7. Verify user should be able to Change Application view to Light Mode :" classname="DashboardTest" time="2.099" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="13. Verify user should be able to send a Comment on specific Contribution:" classname="DashboardTest" time="0.2240" assertions="2">
+    <testcase name="8.Verify user should be able to Change Application view to Dark Mode :" classname="DashboardTest" time="2.101" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="15.Verify user should be able to click see all button for Daily motivation tile  :" classname="DashboardTest" time="2.143" assertions="1">
+    <testcase name="9.Verify user should be able to see Last Contribution  :" classname="DashboardTest" time="0.06800" assertions="4">
 
     
-    </testcase>
-  
-    <testcase name="14. Verify use should be able to Share specific Contribution on social media  :" classname="DashboardTest" time="4.202" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="16. Verify user should be able to navigate Profile page through Settings button  :" classname="DashboardTest" time="2.158" assertions="3">
 
     
 
@@ -155,7 +100,35 @@
     
     </testcase>
   
-    <testcase name="19.Verify user should be able to Redeem Rewards from Your Rewards :" classname="DashboardTest" time="3.777" assertions="3">
+    <testcase name="10.Verify user should be able to see Contribution on Motivation tile :" classname="DashboardTest" time="0.02500" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="11.Verify user should be able to Like specific Contribution :" classname="DashboardTest" time="1.736" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="12. Verify user should be able to Dislike specific Contribution :" classname="DashboardTest" time="0.6570" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="15.Verify user should be able to click see all button for Daily motivation tile  :" classname="DashboardTest" time="2.070" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="14. Verify use should be able to Share specific Contribution on social media  :" classname="DashboardTest" time="4.206" assertions="4">
+
+    
 
     
 
@@ -164,35 +137,44 @@
     
     </testcase>
   
-    <testcase name="20.Verify user should be able to click on points and redirect to profile page :" classname="DashboardTest" time="0.07100" assertions="2">
+    <testcase name="16. Verify user should be able to navigate Profile page through Settings button  :" classname="DashboardTest" time="2.131" assertions="3">
 
     
-
-    
-    </testcase>
-  
-    <testcase name="21.Verify user should be able to click on Overall ranks and redirect to profile page  :" classname="DashboardTest" time="0.6460" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="22.Verify user should be able to click on Overall score and redirect to profile page :" classname="DashboardTest" time="0.6170" assertions="2">
+    <testcase name="20.Verify user should be able to click on points and redirect to profile page :" classname="DashboardTest" time="0.6070" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="23. Verify that user should be able to click on profile pic and redirect to profile page  :" classname="DashboardTest" time="1.161" assertions="2">
+    <testcase name="21.Verify user should be able to click on Overall ranks and redirect to profile page  :" classname="DashboardTest" time="1.121" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="18.Verify user should be able to Logout through Settings button  :" classname="DashboardTest" time="2.992" assertions="3">
+    <testcase name="22.Verify user should be able to click on Overall score and redirect to profile page :" classname="DashboardTest" time="1.111" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="23. Verify that user should be able to click on profile pic and redirect to profile page  :" classname="DashboardTest" time="0.6050" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="18.Verify user should be able to Logout through Settings button  :" classname="DashboardTest" time="2.975" assertions="3">
 
     
 
